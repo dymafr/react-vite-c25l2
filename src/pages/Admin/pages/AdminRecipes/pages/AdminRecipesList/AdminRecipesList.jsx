@@ -1,6 +1,6 @@
-import { useFetchRecipes } from '../../../../../../hooks';
+import { useFetchRecipes } from 'src/hooks';
 import styles from './AdminRecipesList.module.scss';
-import { deleteRecipe as deleteR } from '../../../../../../apis';
+import { deleteRecipe as deleteR } from 'src/apis';
 import { NavLink } from 'react-router-dom';
 
 function AdminRecipesList() {
