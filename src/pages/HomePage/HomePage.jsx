@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import styles from './HomePage.module.scss';
 import Recipe from './components/Recipe/Recipe';
-import Loading from '../../components/Loading/Loading';
 import Search from './components/Search/Search';
 import { useFetchRecipes } from '../../hooks';
 import { updateRecipe as updateR, deleteRecipe as deleteR } from '../../apis';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { selectFilteredRecipes, recipesState } from '../../state';
+import Loading from 'src/components/Loading/Loading';
 
 export default function HomePage() {
   const [filter, setFilter] = useState('');
